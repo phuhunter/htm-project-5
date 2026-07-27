@@ -35,3 +35,74 @@ button {
     border: none;
     outline: none;
 }
+/* -----HEADER------------ */
+.header {
+    padding: 24px 0;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+.header__menu {
+    margin-left: auto;
+}
+.header__list {
+    display: flex;
+}
+.header__link {
+    display: inline-block;
+    padding: 10px 23.5px;
+    color: #696d76;
+    line-height: 28px;
+}
+.header__link:hover {
+    color: #212832;
+    text-shadow: 1px 0 0 currentColor;
+    line-height: 28px;
+    /* font-weight: 600; */
+}
+.header__link--active {
+    color: #212832;
+    text-shadow: 1px 0 0 currentColor;
+}
+.header__link--active::after {
+    content: "";
+    width: 47px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #7264d6;
+    display: block;
+}
+.header__action {
+    margin-left: 430.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+.header__log-in {
+    color: #212832;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+.header_sign-up {
+    width: 113px;
+    height: 52px;
+    border-radius: 6px;
+    background: #212832;
+    color: #fff;
+    font-weight: 600;
+    line-height: 28px;
+}
+/* TEST */
+.test {
+    color: #212832;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px; /* 116.667% */
+    width: 500px;
+}
+.test span {
+    color: #7264d6;
+    display: inline-block;
+}
