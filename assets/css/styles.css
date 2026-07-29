@@ -35,6 +35,20 @@ button {
     border: none;
     outline: none;
 }
+.eyebrown {
+    color: #696d77;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+}
+.eyebrown::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    display: inline-block;
+    margin-right: 12px;
+}
 /* -----HEADER------------ */
 .header {
     padding: 24px 0;
@@ -94,6 +108,7 @@ button {
     font-weight: 600;
     line-height: 28px;
 }
+
 /* TEST */
 /* .test {
     color: #212832;
@@ -116,20 +131,7 @@ button {
     align-items: center;
     gap: 160px;
 }
-.eyebrown {
-    color: #696d77;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-}
-.eyebrown::before {
-    content: "";
-    width: 18px;
-    height: 2px;
-    background: #696d77;
-    display: inline-block;
-    margin-right: 12px;
-}
+
 .hero__title {
     color: #212832;
     font-size: 60px;
@@ -777,4 +779,178 @@ button {
 .client__dot--active {
     background: #7264d6;
     border: 1px solid #7264d6;
+}
+/* ---------------BLOG CSS----------------- */
+.blog {
+    margin-top: 160px;
+    overflow-x: hidden;
+}
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__title {
+    color: #212832;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 6px;
+}
+.blog__desc {
+    width: 435px;
+    color: #696d76;
+    line-height: 28px;
+    margin-top: 18px;
+}
+.blog__btn {
+    width: 123px;
+    height: 58px;
+    border-radius: 8px;
+    background: #212832;
+    color: #fff;
+    font-weight: 600;
+    line-height: 28px;
+}
+.blog__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.blog-card {
+    width: 570px;
+    height: 216px;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    background: #fff;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    transition: scale 0.3s ease;
+}
+.blog-card:hover {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.07);
+    scale: 1.1;
+    border-color: transparent;
+}
+.blog__img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.blog-card__date {
+    color: #696d76;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.blog-card__title {
+    margin-bottom: 20px;
+}
+.blog-card__link {
+    color: #212832;
+    width: 332px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.read-more {
+    color: #7264d6;
+    line-height: 26px;
+}
+/* ---------------DOWNLOAD CSS----------------- */
+.download {
+    margin-top: 160px;
+}
+.download__inner {
+    border-radius: 24px;
+    background: #7264d6;
+    position: relative;
+    padding: 100px 0;
+}
+.eyebrown--download {
+    justify-content: center;
+    color: #fff;
+    line-height: 28px;
+    /* margin-top: 100px; */
+}
+.eyebrown--download::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 12px;
+}
+.download__title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+}
+.download__desc {
+    color: #fff;
+    text-align: center;
+    width: 435px;
+    line-height: 28px;
+    margin-inline: auto;
+    margin-top: 18px;
+}
+.download__list {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.download__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download__decor {
+    position: absolute;
+    transform-origin: center center;
+}
+@keyframes star-1 {
+    from {
+        transform: translateX(-110px) rotate(0deg);
+    }
+    to {
+        transform: translateX(0) rotate(360deg);
+    }
+}
+@keyframes star-3 {
+    from {
+        transform: translateX(110px) rotate(360deg);
+    }
+    to {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+.download__decor--1 {
+    top: 49px;
+    left: 112px;
+    animation: star-1 2s linear infinite alternate;
+}
+.download__decor--2 {
+    bottom: 49px;
+    left: 166px;
+    animation: star-1 2s linear infinite alternate;
+}
+.download__decor--3 {
+    top: 49px;
+    right: 112px;
+    animation: star-3 2s linear infinite alternate;
+}
+.download__decor--4 {
+    bottom: 49px;
+    right: 166px;
+    animation: star-3 2s linear infinite alternate;
 }
