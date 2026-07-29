@@ -558,6 +558,7 @@ button {
 }
 .transfer__content {
     flex-shrink: 0;
+    overflow-x: hidden;
 }
 .transfer__img {
     height: 100%;
