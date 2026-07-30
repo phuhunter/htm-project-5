@@ -21,6 +21,7 @@ body {
 }
 .btn:hover {
     opacity: 0.7;
+    opacity: 0.7 !important;
 }
 a {
     text-decoration: none;
@@ -784,6 +785,7 @@ button {
 .blog {
     margin-top: 160px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .blog__top {
     display: flex;
@@ -812,6 +814,7 @@ button {
     font-weight: 600;
     line-height: 28px;
 }
+
 .blog__list {
     margin-top: 70px;
     display: grid;
@@ -860,8 +863,11 @@ button {
     line-height: 30px;
 }
 .read-more {
-    color: #7264d6;
+    color: #696d76;
     line-height: 26px;
+}
+.read-more:hover {
+    color: #7264d6;
 }
 /* ---------------DOWNLOAD CSS----------------- */
 .download {
@@ -953,4 +959,123 @@ button {
     bottom: 49px;
     right: 166px;
     animation: star-3 2s linear infinite alternate;
+}
+/* ---------FOOTER------------------ */
+.footer {
+    margin-top: 100px;
+    padding-top: 100px;
+    background: #fafbff;
+}
+.footer__inner {
+}
+.footer__nav {
+    display: flex;
+}
+.footer__logo-link {
+    margin-right: 162.5px;
+}
+.footer__column:nth-of-type(2) {
+    margin-left: 163px;
+}
+.footer__address {
+    margin-left: 189px;
+}
+.footer__column-title {
+    color: #212832;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+.footer__item {
+    margin-top: 10px;
+}
+.footer__link {
+    color: #6a6e78;
+    font-size: 18px;
+    line-height: 30px;
+}
+.footer__link:hover {
+    text-decoration: underline;
+}
+.footer__address-title {
+    color: #212832;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+.footer__adress-desc {
+    color: #6a6e78;
+    font-size: 18px;
+    line-height: 30px;
+    width: 371px;
+    margin-bottom: 48px;
+}
+.footer__form:has(:invalid) .footer__form-btn {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.footer__form-text {
+    color: #0a142f;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.footer__form-group {
+    margin-top: 24px;
+    display: flex;
+    gap: 20px;
+}
+.footer__input {
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    padding: 12px;
+}
+.footer__input::placeholder {
+    color: #8e919a;
+    line-height: 28px;
+}
+.footer__form-btn {
+    width: 113px;
+    height: 52px;
+    border-radius: 6px;
+    background: #7264d6;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.footer__contact {
+    margin-top: 70px;
+}
+.footer__email,
+.footer__phone {
+    color: #6a6e78;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.footer__phone {
+    margin-left: 100px;
+}
+.footer__bottom {
+    height: 84px;
+    background: #7264d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+.footer__copy-right {
+    color: #fff;
+    line-height: 28px;
 }
